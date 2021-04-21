@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script type="text/javascript">
+
+      function buttonClickOne() {
+        document.getElementById("info").innerHTML = "You clicked button 1";
+      }
+
+    </script>
+
+  </head>
+  <body>
+    <h1>This is a Javascript example</h1>
+    <br>
+    <p id="info">Click a button below!</p>
+    <br>
+    <button type="button" name="button" onclick="buttonClickOne()">
+      Button 1
+    </button>
+    <button type="button" name="button" onclick='document.getElementById("info").innerHTML = "You clicked button 2"'>
+      Button 2
+    </button>
+
+  </body>
+</html>
