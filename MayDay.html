@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+
+    <!-- Create the MayDay Throne
+        - A May Queen
+        - Decorated
+        - The Queen sits on the Throne
+        - The Queen is crowned -->
+      <br>
+      <h2>Welcome to May Day!</h2>
+      <br>
+      <center>
+      <img src="mayFlower.png" alt="">
+      </center>
+      <br>
+      <button type="button" name="button">Crown the Queen!</button>
+      <br>
+      <br>
+      <br>
+      <p>The weather is currently:
+        <span id="weather"></span>
+      </p>
+      <button type="button" name="wButton" onclick="checkW();">Check the Weather!</button>
+
+      <br>
+      <br>
+      <button type="button" name="button" onclick="changeW('Sunny');">It is Sunny!</button>
+      <button type="button" name="button" onclick="changeW('Snowy');">It is Snowing!</button>
+      <script type="text/javascript">
+
+        var mayDay = {
+          weather: "Rainy",
+          colorThm: "yellow",
+          attendants: 50
+        };
+
+        function checkW() {
+          //window.alert("Rainy");
+          document.getElementById("weather").innerHTML = mayDay.weather;
+        }
+
+        function changeW(w) {
+          mayDay.weather = w;
+        }
+      </script>
+
+  </body>
+</html>
