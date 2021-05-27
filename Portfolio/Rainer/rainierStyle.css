@@ -1,0 +1,121 @@
+.PortfolioNav {
+  background-color: grey;
+  font-size: 64;
+  font-weight: bold;
+  padding: 50px;
+}
+
+.embedPage {
+  width: 80%;
+  border-style: double;
+}
+h1 {
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  color: blue;
+}
+
+h1:hover {
+  animation-name: animation1;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 30px;
+
+}
+
+p {
+  text-align: center;
+  font-size: 32px;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  margin: 40px;
+  padding: 45px;
+
+}
+
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a.wildlife{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-image: url("fox.jpg");
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.wildlife:hover {
+  background-image: url("fox2.jpg");
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  overflow: scroll;
+  text-align: center;
+  width: 29%;
+  height: 200px;
+}
+
+.column.side {
+  width: 29%;
+  height: 200px;
+}
+
+@keyframes animation1 {
+  0% {background-color: white;}
+  25% {background-color: pink; transform: rotate(360deg);}
+  50% {background-color: red;}
+  75% {background-color: green;}
+  100% {background-color: cyan;}
+}
+
+.column.middle {
+  width: 29%;
+  height: 200px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}

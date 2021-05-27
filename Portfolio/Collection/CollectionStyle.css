@@ -1,0 +1,59 @@
+.PortfolioNav {
+  background-color: grey;
+  font-size: 64;
+  font-weight: bold;
+  padding: 50px;
+}
+
+.embedPage {
+  margin: 100px;
+  border-style: double;
+}
+
+nav {
+  text-align: center;
+  color: #4522AB;
+  text-shadow: 3px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+h1 {
+  text-shadow: 20px;
+  color: #9090EE;
+  opacity: 80;
+  padding: 15px;
+  font-size: 64px;
+  text-align: center;
+}
+
+table, td {
+  border: 3px solid black;
+}
+
+.intro {
+  background-color: #9585F9;
+  opacity: 80;
+  font-size: 24px;
+  text-align: left;
+  padding: 30px;
+}
+
+.intro img {
+  margin-left: 150px;
+  margin-right: 40px;
+  border: 10px;
+  border-style: groove;
+}
+
+.intro h2 {
+  margin-left: 150px;
+}
+
+.plants {
+  background-color: #95C5C9;
+  opacity: 80;
+  font-size: 28px;
+  text-align: center;
+  padding: 30px;
+}
